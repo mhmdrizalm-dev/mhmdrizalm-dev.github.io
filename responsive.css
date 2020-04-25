@@ -12,6 +12,9 @@
   .heading h2 {
     font-size: 20px;
   }
+   .contact-btn {
+    width: 40%;
+  }
 }
 
 /* Untuk Smartphone */
@@ -46,5 +49,16 @@
   .main p {
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .contact-form {
+    padding-top: 20px;
+    flex: auto;
+  }
+
+  input, textarea {
+    margin-bottom: 12px;
+    padding:7px;
+    font-size:14px;
   }
 }
