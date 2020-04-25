@@ -8,15 +8,10 @@
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   </head>
-  <!-- Note : -->
-  <!-- 1. Setidaknya satu animasi -->
-  <!-- 2. Responsif Untuk Smartphone dan Tablet -->
-  <!-- 3. Pastikan Untuk melihat slide library jika ada yg lupa -->
-  <!-- 4. Referensi untuk Color : https://flatuicolors.com/ -->
-  <!-- 5. Referensi untuk Animasi CSS : https://www.w3schools.com/css/css3_animations.asp -->
   <body>
     <!-- Header -->
     <header>
+      
       <div class="container">
         <div class="header-left">
           <img class="logo" src="2.png">
@@ -25,13 +20,15 @@
           <span class="fa fa-bars menu-icon"></span>
         </div>
         <div class="header-right">
-          <a href="#">Informasi</a>
-          <a href="#">Anggota</a>
-          <a href="#">Kontak</a>
+          <a href="#home">Informasi</a>
+          <a href="#anggota">Anggota</a>
+          <a href="#saran">Saran</a>
         </div>
       </div>
+      </section>
     </header>
     <!-- Bagian Utama "main"-->
+    <section id="home">
      <div class="main">
       <div class="container">
         <h1>Selamat Datang Di Halaman Kelompok Kami</h1>
@@ -52,7 +49,9 @@
         </p>
       </div>
     </div>
+    </section>
     <!-- Bagian Extra_1 -->
+    <section id="anggota">
     <div class="daftar-anggota">
       <div class="container">
         <div class="heading">
@@ -75,10 +74,10 @@
           </div>
           <div class="anggota-f14">
             <div class="foto-anggota">
-              <img class="foto" src="sal.png">
+              <img class="foto" src="Afrisal.jpg">
                <p>Mohamad Afrisal</p>
             </div>
-             <p class="text-contents">BELOM DI ISI KAKA</p>
+             <p class="text-contents">"Terus Belajar"</p>
           </div>
           <div class="anggota-f14">
             <div class="foto-anggota">
@@ -98,18 +97,27 @@
         </div>
       </div>
     </div>
-    <div class="message-wrapper" id="login">
+
+    <section id="saran">
+    <div class="message-wrapper">
       <div class="container">
-        <div class="heading">
-          <h2>Apakah anda siap untuk menjadi programer yang handal?</h2>
-          <h3>Ayo belajar coding, ayo belajar menjadi lebih kreatif!</h3>
+       <h3 class="section-title">Kritik & Saran</h3>
         </div>
-        <span class="btn message">Mulai Belajar</span>
+          <div class="contact-form">
+            <input placeholder="Nama" />
+            <input placeholder="Email" />
+            <input placeholder="Keterangan" />
+            <textarea placeholder="Pesan"></textarea>
+            <input class="contact-btn" type="submit" value="Kirim"/>
+          </div>
+     
+        </div>
       </div>
     </div>
+  </section>
+
     <footer>
       <div class="container">
-        <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
         <p>© 2020 DTS KOMINFO | PROGATE | PROJECT TEAM | Design by F 14 Team</p>
       </div>
     </footer>
