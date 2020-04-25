@@ -1,204 +1,117 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: "Lucida Grande";
-}
-
-a {
-  text-decoration: none;
-}
-
-.clear {
-  clear: left;
-}
-
-.container {
-  max-width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
-  background-size: cover;
-  color: white;
-  text-align: center;
-}
-
-.top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 5px;
-  margin-bottom: 10px;
-}
-
-.top-wrapper p {
-  opacity: 0.7;
-  margin-bottom: 3px;
-}
-
-.btn-wrapper {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.btn-wrapper p {
-  margin: 10px 0;
-}
-
-.signup {
-  background-color: #239b76;
-}
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
-}
-
-.btn {
-  padding: 12px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.fa {
-  margin-right: 5px;
-}
-
-header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-  position :fixed;
-  top: 0;
-  z-index: 10;
-}
-
-.logo {
-  width: 124px;
-  margin-top: 20px;
-}
-
-.header-left {
-  float: left;
-}
-
-.header-right {
-  float: right;
-  margin-right: -25px;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.menu-icon{
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
-}
-
-.lesson-wrapper {
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
-}
-
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #5f5d60;
-}
-
-.heading h2 {
-  font-weight: normal;
-}
-
-.lesson {
-  float: left;
-  width: 25%;
-}
-
-.lesson-icon {
-  position: relative;
-}
-
-.lesson-icon p {
-  position: absolute;
-  top: 44%;
-  width: 100%;
-  color: white;
-}
-
-.text-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 15px;
-  color: #b3aeb5;
-}
-
-.heading h3 {
-  font-weight: normal;
-}
-
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
-}
-
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0 7px #1a7940;
-}
-
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
-}
-
-footer img {
-  width: 125px;
-}
-
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
-}
-
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F14_DTS20</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  </head>
+  <!-- Note : -->
+  <!-- 1. Setidaknya satu animasi -->
+  <!-- 2. Responsif Untuk Smartphone dan Tablet -->
+  <!-- 3. Pastikan Untuk melihat slide library jika ada yg lupa -->
+  <!-- 4. Referensi untuk Color : https://flatuicolors.com/ -->
+  <!-- 5. Referensi untuk Animasi CSS : https://www.w3schools.com/css/css3_animations.asp -->
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <img class="logo" src="2.png">
+        </div>
+        <div>
+          <span class="fa fa-bars menu-icon"></span>
+        </div>
+        <div class="header-right">
+          <a href="#">Informasi</a>
+          <a href="#">Anggota</a>
+          <a href="#">Kontak</a>
+        </div>
+      </div>
+    </header>
+    <!-- Bagian Utama "main"-->
+     <div class="main">
+      <div class="container">
+        <h1>Selamat Datang Di Halaman Kelompok Kami</h1>
+        <h2>"Website ini kami dedikasikan untuk proyek tugas kelompok HTML dan CSS"</h2>
+        <p>
+            Kami Merupakan Peserta Digital Talent Scholarship 2020 dari
+            <a href="https://digitalent.kominfo.go.id/login" class="btn kominfo">
+            Digital Talent Scholarship</a> yang diadakan oleh Kementerian Komunikasi dan Informatika RI.
+            Kelompok Kami Mengikuti Pelatihan Tentang HTML, CSS, dan JavaScript dimana pada pelatihan tersebut
+            Kementerian Komunikasi dan Informatika RI bermitra dengan
+            <a href="https://progate.com/" class="btn progate">Progate</a> dan kami mendapatkan
+            Kelas-Pro-F dan sekarang mendapat tugas ini dengan nama kelompok
+            <a href="#" class="btn kelompok">F14_DTS20</a>.
+        </p>
+        <p>
+            Dalam membangun website ini kelompok kami menggunakan HTML dan CSS, Dimana untuk struktur website dibangun dengan 1 file index.html,
+            dan untuk memperindah tampilan serta responsive pada beberapa perangkat kami menggunakan 2 file css yaitu stylesheet.css dan responsive.css.
+        </p>
+      </div>
+    </div>
+    <!-- Bagian Extra_1 -->
+    <div class="daftar-anggota">
+      <div class="container">
+        <div class="heading">
+          <h2>Berikut adalah Anggota Kelompok Kami :</h2>
+        </div>
+        <div class="anggota">
+          <div class="anggota-f14">
+            <div class="foto-anggota">
+              <img class="foto" src="Zulfikar.jpg">
+               <p>Muhamad Zulfikar</p>
+            </div>
+             <p class="text-contents">"Sebaik-baiknya manusia adalah yang banyak manfaatnya bagi orang lain"</p>
+          </div>
+          <div class="anggota-f14">
+            <div class="foto-anggota">
+              <img class="foto" src="M D Setiawan.jpg">
+               <p>Moh Dwi Setiawan</p>
+            </div>
+             <p class="text-contents">"Menuntut ilmu adalah taqwa. Menyampaikan ilmu adalah ibadah. Mengulang-ulang ilmu adalah zikir. Mencari ilmu adalah jihad."</p>
+          </div>
+          <div class="anggota-f14">
+            <div class="foto-anggota">
+              <img class="foto" src="sal.png">
+               <p>Mohamad Afrisal</p>
+            </div>
+             <p class="text-contents">BELOM DI ISI KAKA</p>
+          </div>
+          <div class="anggota-f14">
+            <div class="foto-anggota">
+              <img class="foto" src="M Rizal.jpg">
+               <p>M. Rizal Muharriansyah</p>
+            </div>
+             <p class="text-contents">"Dirumah Aja"</p>
+          </div>
+          <div class="anggota-f14">
+            <div class="foto-anggota">
+              <img class="foto" src="mardiyana.png">
+               <p>Mardiyana</p>
+            </div>
+             <p class="text-contents">"Tak bisa di hubungi bukan berarti tak bisa di cari"</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div class="message-wrapper" id="login">
+      <div class="container">
+        <div class="heading">
+          <h2>Apakah anda siap untuk menjadi programer yang handal?</h2>
+          <h3>Ayo belajar coding, ayo belajar menjadi lebih kreatif!</h3>
+        </div>
+        <span class="btn message">Mulai Belajar</span>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
+        <p>Learn to code, learn to be creative.</p>
+      </div>
+    </footer>
+  </body>
+</html>
