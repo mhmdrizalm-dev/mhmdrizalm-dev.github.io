@@ -34,7 +34,7 @@ header {
 
 .logo {
   width: 200px;
-  margin-top: -40px;
+  margin-top: 10px;
 }
 
 .header-left {
@@ -70,9 +70,8 @@ header {
 /* CSS Main */
 .main {
   padding: 100px 0 100px 0;
-  background-image: url(BG1.jpg);
-  background-size: cover;
-  color: white;
+  background-image: url(logo.png);
+  color: black;
 }
 
 .main h1 {
@@ -142,7 +141,7 @@ header {
 }
 
 /*  Bagian Extra_1 */
-.daftar-anggota {
+.daftar-applikasi {
   padding-bottom: 80px;
   padding-left: 5%;
   padding-right: 5%;
@@ -150,12 +149,12 @@ header {
   text-align: center;
 }
 
-.anggota-f14 {
+.applikasi-waw {
   float: left;
   width: 20%;
 }
 
-.foto-anggota {
+.foto-waw {
   position: relative;
 }
 
@@ -191,65 +190,51 @@ img {
 }
 
 
-.message-wrapper{
-  background-color:rgba(44, 62, 80,1.0);
-  padding: 50px 0px;
-  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+.heading h3 {
+  font-weight: normal;
 }
 
-.section-title{
-  font-weight: bold;
-}
-
-.contact-form {
-  /* float: right; */
-  padding-left:300px;
-  width: 50%;
+.extra_2 {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
   text-align: center;
-
 }
 
-input, textarea {
-    width:80%;
-    margin-bottom: 15px;
-    padding:10px;
-    font-size:16px;
-    border:1px solid #dee7ec;
-
-}
-
-.contact-btn {
-  width: 30%;
-  background-color: rgba(52, 152, 219,1.0);
-  border: 1;
-  border-radius: 20px;
-  padding: 10px 10px;
-  color: #fff;
-  transition: 0.5s;
-  box-shadow: 0 7px rgba(52, 73, 94,1.0);
-}
-
-.contact-btn:hover {
- 
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
   cursor: pointer;
+  box-shadow: 0 7px #1a7940;
 }
 
-.contact-btn:active {
+.message:active {
   position: relative;
   top: 7px;
   box-shadow: none;
 }
 
+/* Tambahkan CSS untuk tags <input> dan <textarea> */
+input , textarea {
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  font-size: 18px;
+  border: 1px solid #dee7ec;
+}
 
 /* CSS Footer  */
+footer img {
+  width: 125px;
+}
 
 footer p {
-  color: #b3aeb5;
+  color: white;
   font-size: 12px;
-  text-align: center;
 }
 
 footer {
+  background-color: #11101e;
   padding-top: 30px;
   padding-bottom: 20px;
 }
